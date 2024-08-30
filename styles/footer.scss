@@ -1,0 +1,228 @@
+@use 'variables' as variables;
+
+footer {
+    color: variables.$font-color;
+    padding: 15px;
+    background-color: variables.$footer-background-color;
+    margin-top: 20px;
+
+    border-top: solid white 2px;
+
+    .container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        padding: 10px;
+        margin-top: 20px;
+
+        span strong {
+            font-weight: bolder;
+        }
+    }
+
+    .footer-contact {
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    .social {
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+
+        margin-top: 15px;
+
+        li a {
+            background-color: white;
+            border-radius: 50%;
+
+            width: 50px;
+            height: 50px;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            transition: background-color 0.2s;
+        }
+
+        li a:hover {
+            background-color: rgb(190, 190, 190);
+        }
+
+        img {
+            width: 30px;
+            text-align: center;
+        }
+    }
+
+    .logo-wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        p {
+            align-self: center;
+            color: rgb(207, 207, 207);
+            font-weight: 500;
+            font-size: 18px;
+        }
+    }
+    
+    #footer-logo {
+        padding: 20px;
+        // max-height: variables.$footer-logo-size;
+        height: 120px;
+        filter: drop-shadow(5px 5px 8px #00000062);
+    }
+
+    .contact-wrapper {
+        display: flex;
+        flex-direction: column;
+
+
+        h1 {
+            font-size: 20px;
+            margin-top: 20px;
+
+            strong {
+                border-bottom: solid 2px;
+            }
+        }
+
+        .contact-body {
+            display: flex;
+            flex-direction: column;
+            margin-top: 10px;
+        }
+
+        .map {
+            max-height: 25px;
+        }
+
+        #contact-number {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+
+            border-bottom: solid rgba(221, 221, 221, 0.438) 2px;
+            padding-bottom: 5px;
+
+            img {
+                margin: 0 9px 0 0;
+                max-height: 25px;
+                background-color: white;
+                border-radius: 50%;
+                padding: 5px;
+            }
+
+            span {
+                width: 200px;
+            }
+        }
+
+        #contact-address {
+            display: flex;
+            border-bottom: solid rgba(221, 221, 221, 0.438) 2px;
+            padding-bottom: 5px;
+            
+            img {
+                margin: 0;
+                margin-right: 9px;
+                background-color: white;
+                border-radius: 50%;
+                padding: 5px;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: variables.$desktop-screen-size) {
+    footer {
+        color: variables.$font-color;
+        padding: 15px;
+        background-color: variables.$footer-background-color;
+        margin-top: 20px;
+
+        .container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            padding: 10px;
+            margin-top: 20px;
+
+            span strong {
+                font-weight: bolder;
+            }
+        }
+
+        .footer-contact {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .logo-wrapper {
+            flex-direction: column;
+        }
+        
+        #footer-logo {
+            margin-left: 10%;
+            margin-right: 10%;
+            max-height: variables.$footer-logo-size;
+            filter: drop-shadow(5px 5px 8px #00000062);
+        }
+
+        .contact-wrapper {
+            display: flex;
+            flex-direction: column;
+
+            h1 {
+                font-size: 20px;
+                margin-top: 20px;
+            }
+
+            .contact-body {
+                display: flex;
+                flex-direction: column;
+                margin-top: 30px;
+            }
+
+            .map {
+                max-height: 25px;
+            }
+
+            #contact-number {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+
+                img {
+                    margin: 0 9px 0 0;
+                    max-height: 25px;
+                    background-color: white;
+                    border-radius: 50%;
+                    padding: 5px;
+                }
+
+                span {
+                    width: 200px;
+                }
+            }
+
+            #contact-address {
+                display: flex;
+
+                img {
+                    margin: 0;
+                    margin-right: 9px;
+                    background-color: white;
+                    border-radius: 50%;
+                    padding: 5px;
+                }
+            }
+        }
+    }
+}

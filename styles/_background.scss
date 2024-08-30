@@ -1,0 +1,16 @@
+$grid-color: rgba(201, 34, 34, 0.356);
+$grid-color2: rgba(143, 76, 76, 0.11);
+
+%background-style {
+    background-size: 32px 32px;
+    background-image: 
+    linear-gradient(to top, $grid-color 1px, transparent 2px), 
+    linear-gradient(to right, $grid-color 1px, transparent 2px);
+}
+
+%background-style2 {
+    background-size: 16px 16px;
+    background-image: 
+    linear-gradient(to top, $grid-color2 1px, transparent 2px), 
+    linear-gradient(to right, $grid-color2 1px, transparent 2px);
+}

@@ -1,0 +1,245 @@
+@use 'reset';
+@use 'background';
+
+@use 'variables' as variables;
+@use 'footer';
+@use 'header';
+
+body, html {
+    width: 100%;
+
+    strong {
+        font-weight: bold;
+        transition: font-size 0.3s;
+    }
+
+    a {
+        color: white;
+    }
+}
+
+body {
+    @extend %background-style;
+    
+    background-color: variables.$body-background-dark;
+    font: 100% variables.$font-base;
+
+    .main {
+        color: variables.$font-color;
+
+        padding-bottom: 10px;
+    }
+}
+
+// Star rotation
+@keyframes rotating {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+
+.carousel-slide-container {
+    display: flex;
+    padding: 20px;
+}
+
+.carousel-slide-container-wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background: rgb(199, 18, 18);
+    border-radius: 10px;
+
+    video {
+        height: auto;
+        width: 100%;
+        max-width: 350px;
+
+        border-radius: 10px;
+        align-self: center;
+        margin-top: auto;
+        margin-bottom: 25px;
+    }
+}
+
+.left-carousel {
+    padding: 15px;
+    
+    p {
+        text-align: left;
+        font-weight: 700;
+        font-size: 1.5rem;
+
+        margin-bottom: 15px;
+    }
+}
+
+.right-carousel {
+    display: flex;
+    flex: 1;
+    align-self: center;
+}
+
+.button-advertise-main {
+    background-color: variables.$know-more-color;
+    border-radius: 50px;
+    padding: 0;
+    margin-right: 15px;
+    transition: outline 0.1s;
+    width: 170px;
+    
+    display: flex;
+    align-items: center;
+    align-self: center;
+
+    a {
+        color: variables.$bugdet-font-color;
+        transition: color 0.2s ease-in-out;
+        padding: 10px;
+
+        font-weight: 600;
+        font-size: 1.2rem;
+        text-transform: uppercase;
+        text-decoration: none;
+        width: 100%;
+        text-align: center;
+    }
+
+    a:hover {
+        color: variables.$budget-font-hover-color;
+    }
+}
+
+
+@media screen and (min-width: variables.$laptop-screen-size) {
+    .carousel-slide-container {
+        display: flex;
+        padding: 20px;
+    }
+    
+    .carousel-slide-container-wrapper {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        background: rgb(199, 18, 18);
+        border-radius: 10px;
+    
+        video {
+            height: auto;
+            width: 100%;
+            max-width: 400px;
+            border-radius: 10px;
+            align-self: center;
+            margin-top: auto;
+            margin-bottom: 25px;
+        }
+    }
+    
+    .left-carousel {
+        text-align: center;
+    }
+    
+    .right-carousel {
+        display: flex;
+        flex: 1;
+        align-self: center;
+    }
+
+}
+
+// Desktop screens
+@media screen and (min-width: variables.$desktop-screen-size) {
+    .carousel-slide-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .carousel-slide-container-wrapper {
+        display: flex;
+        flex-direction: row;
+        width: 80%;
+        height: 90%;
+        background: rgb(199, 18, 18);
+        border-radius: 10px;
+    
+        video {
+            height: auto;
+            width: 95%;
+            max-width: 600px;
+            border-bottom-left-radius: 40px;
+            border-top-right-radius: 5px;
+            float: right;
+        }
+    }
+    
+    .left-carousel {
+        flex: 1;
+    }
+    
+    .right-carousel {
+        margin-left: auto;
+    }
+
+    .button-advertise-main {
+        background-color: variables.$know-more-color;
+        border-radius: 10px;
+        padding: 0;
+        margin-right: 15px;
+        transition: outline 0.1s;
+        width: 200px;
+        
+        display: flex;
+        align-items: center;
+        align-self: center;
+
+        a {
+            color: variables.$bugdet-font-color;
+            transition: color 0.2s ease-in-out;
+            padding: 10px;
+
+            font-weight: 600;
+            text-transform: uppercase;
+            text-decoration: none;
+            width: 100%;
+            text-align: center;
+        }
+
+        a:hover {
+            color: variables.$budget-font-hover-color;
+        }
+    }
+}
+
+#big-title {
+    font-size: variables.$big-title-font-size;
+    text-align: center;
+    margin-top: 13px;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.about-us {
+    margin-top: 25px;
+    background: variables.$nav-background-dark;
+    padding: 15px;
+    border-radius: 15px;
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-bottom: 20px;
+
+    h1 {
+        font-size: 24px;
+        
+        strong {
+            border-bottom: solid 3px;
+        }
+    }
+}
+
