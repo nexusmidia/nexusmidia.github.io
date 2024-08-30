@@ -57,7 +57,7 @@ body {
     video {
         height: auto;
         width: 100%;
-        max-width: 350px;
+        max-width: 300px;
 
         border-radius: 10px;
         align-self: center;
@@ -68,11 +68,12 @@ body {
 
 .left-carousel {
     padding: 15px;
+    margin-top: 13px;
     
     p {
         text-align: left;
         font-weight: 700;
-        font-size: 1.5rem;
+        font-size: 1.3rem;
 
         margin-bottom: 15px;
     }
@@ -102,7 +103,7 @@ body {
         padding: 10px;
 
         font-weight: 600;
-        font-size: 1.2rem;
+        font-size: 1.1rem;
         text-transform: uppercase;
         text-decoration: none;
         width: 100%;
@@ -115,41 +116,40 @@ body {
 }
 
 
-@media screen and (min-width: variables.$laptop-screen-size) {
-    .carousel-slide-container {
-        display: flex;
-        padding: 20px;
-    }
+// @media screen and (min-width: variables.$laptop-screen-size) {
+//     .carousel-slide-container {
+//         display: flex;
+//         padding: 20px;
+//     }
     
-    .carousel-slide-container-wrapper {
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-        background: rgb(199, 18, 18);
-        border-radius: 10px;
+//     .carousel-slide-container-wrapper {
+//         display: flex;
+//         flex-direction: column;
+//         width: 100%;
+//         background: rgb(199, 18, 18);
+//         border-radius: 10px;
     
-        video {
-            height: auto;
-            width: 100%;
-            max-width: 400px;
-            border-radius: 10px;
-            align-self: center;
-            margin-top: auto;
-            margin-bottom: 25px;
-        }
-    }
+//         video {
+//             height: auto;
+//             width: 100%;
+//             max-width: 400px;
+//             border-radius: 10px;
+//             align-self: center;
+//             margin-top: auto;
+//             margin-bottom: 25px;
+//         }
+//     }
     
-    .left-carousel {
-        text-align: center;
-    }
+//     .left-carousel {
+//         text-align: center;
+//     }
     
-    .right-carousel {
-        display: flex;
-        flex: 1;
-        align-self: center;
-    }
+//     .right-carousel {
+//         display: flex;
+//         flex: 1;
+//     }
 
-}
+// }
 
 // Desktop screens
 @media screen and (min-width: variables.$desktop-screen-size) {
@@ -169,25 +169,37 @@ body {
     
         video {
             height: auto;
-            width: 95%;
+            // width: 95%;
             max-width: 600px;
+            border-top-left-radius: 0;
+            border-bottom-right-radius: 0;
             border-bottom-left-radius: 40px;
             border-top-right-radius: 5px;
-            float: right;
         }
     }
     
     .left-carousel {
         flex: 1;
+        margin-left: 20px;
+
+        p {
+            font-size: 1.6rem;
+            margin-top: 30px;
+            margin-bottom: 30px;
+        }
     }
     
     .right-carousel {
-        margin-left: auto;
+        margin-left: 0;
+        margin-right: 0;
+        display: flex;
+        flex: 1;
+        align-self: flex-start;
     }
 
     .button-advertise-main {
         background-color: variables.$know-more-color;
-        border-radius: 10px;
+        border-radius: 50px;
         padding: 0;
         margin-right: 15px;
         transition: outline 0.1s;
