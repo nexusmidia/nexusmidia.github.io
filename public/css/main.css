@@ -618,7 +618,7 @@ body .main {
   .carousel-slide-container-wrapper {
     display: flex;
     flex-direction: row;
-    width: 85%;
+    width: 80%;
     height: 90%;
     background: rgb(199, 18, 18);
     border-radius: 10px;
@@ -676,12 +676,15 @@ body .main {
   }
   .about-us {
     margin-top: 25px;
-    background: rgb(199, 18, 18);
-    padding: 20px;
-    border-radius: 15px;
     margin-bottom: 20px;
     margin: 0 auto;
-    width: 80%;
+    padding: 20px;
+  }
+  .about-us div {
+    background: rgb(199, 18, 18);
+    border-radius: 15px;
+    margin: 0 auto;
+    width: 77%;
   }
   .about-us h1 {
     font-size: 24px;

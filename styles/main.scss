@@ -153,7 +153,7 @@ body {
     .carousel-slide-container-wrapper {
         display: flex;
         flex-direction: row;
-        width: 85%;
+        width: 80%;
         height: 90%;
         background: variables.$carousel-background-color;
         border-radius: 10px;
@@ -222,14 +222,17 @@ body {
 
     .about-us {
         margin-top: 25px;
-        background: variables.$carousel-background-color;
-    
-        padding: 20px;
-        border-radius: 15px;
+        
         margin-bottom: 20px;
         margin: 0 auto;
+        padding: 20px;
         
-        width: 80%;
+        div {
+            background: variables.$carousel-background-color;
+            border-radius: 15px;
+            margin: 0 auto;
+            width: 77%;
+        }
     
         h1 {
             font-size: 24px;
