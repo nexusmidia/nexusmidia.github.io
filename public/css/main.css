@@ -167,7 +167,7 @@ footer .contact-wrapper #contact-address img {
   padding: 5px;
 }
 
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 869px) {
   footer {
     color: rgb(255, 255, 255);
     padding: 15px;
@@ -458,7 +458,7 @@ header.active ul li a {
   text-decoration: none;
 }
 
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 869px) {
   header .header-div {
     align-items: center;
   }
@@ -533,15 +533,13 @@ body .main {
   width: 100%;
   background: rgb(199, 18, 18);
   border-radius: 10px;
+  overflow: hidden;
 }
 .carousel-slide-container-wrapper video {
-  height: auto;
   width: 100%;
-  max-width: 300px;
+  object-fit: cover;
   border-radius: 10px;
   align-self: center;
-  margin-top: auto;
-  margin-bottom: 25px;
 }
 
 .left-carousel {
@@ -557,8 +555,9 @@ body .main {
 
 .right-carousel {
   display: flex;
-  flex: 1;
   align-self: center;
+  max-width: 400px;
+  padding: 10px;
 }
 
 .button-advertise-main {
@@ -587,7 +586,7 @@ body .main {
   color: rgb(243, 243, 243);
 }
 
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 869px) {
   .carousel-slide-container {
     display: flex;
     align-items: center;
@@ -603,6 +602,7 @@ body .main {
   }
   .carousel-slide-container-wrapper video {
     height: auto;
+    min-width: 500px;
     max-width: 600px;
     border-top-left-radius: 0;
     border-bottom-right-radius: 0;
@@ -610,7 +610,6 @@ body .main {
     border-top-right-radius: 5px;
   }
   .left-carousel {
-    flex: 1;
     margin-left: 20px;
   }
   .left-carousel p {
@@ -619,11 +618,14 @@ body .main {
     margin-bottom: 30px;
   }
   .right-carousel {
-    margin-left: 0;
+    margin-left: auto;
     margin-right: 0;
     display: flex;
     flex: 1;
     align-self: flex-start;
+    max-width: 500px;
+    min-width: 400px;
+    padding: 0;
   }
   .button-advertise-main {
     background-color: rgb(124, 18, 18);
