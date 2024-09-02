@@ -250,6 +250,38 @@ body {
     
 }
 
+.section-main {
+    margin-top: 25px;
+    
+    margin-bottom: 20px;
+    margin: 0 auto;
+    padding: 20px;
+    
+    div {
+        background: variables.$carousel-background-color;
+        border-radius: 15px;
+        margin: 0 auto;
+        width: 77%;
+    }
+
+    h1 {
+        font-size: 24px;
+        
+        strong {
+            border-bottom: solid 3px;
+        }
+    }
+
+    p {
+        color: rgb(231, 229, 229);
+        font-size: 18px;
+    }
+}
+
+.em-construcao {
+    padding: 20px;
+}
+
 #big-title {
     font-size: variables.$big-title-font-size;
     text-align: center;

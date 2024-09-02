@@ -697,6 +697,33 @@ body .main {
     font-size: 18px;
   }
 }
+.section-main {
+  margin-top: 25px;
+  margin-bottom: 20px;
+  margin: 0 auto;
+  padding: 20px;
+}
+.section-main div {
+  background: rgb(199, 18, 18);
+  border-radius: 15px;
+  margin: 0 auto;
+  width: 77%;
+}
+.section-main h1 {
+  font-size: 24px;
+}
+.section-main h1 strong {
+  border-bottom: solid 3px;
+}
+.section-main p {
+  color: rgb(231, 229, 229);
+  font-size: 18px;
+}
+
+.em-construcao {
+  padding: 20px;
+}
+
 #big-title {
   font-size: 28px;
   text-align: center;
