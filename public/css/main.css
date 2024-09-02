@@ -167,7 +167,7 @@ footer .contact-wrapper #contact-address img {
   padding: 5px;
 }
 
-@media screen and (min-width: 869px) {
+@media screen and (min-width: 800px) {
   footer {
     color: rgb(255, 255, 255);
     padding: 15px;
@@ -458,7 +458,7 @@ header.active ul li a {
   text-decoration: none;
 }
 
-@media screen and (min-width: 869px) {
+@media screen and (min-width: 800px) {
   header .header-div {
     align-items: center;
   }
@@ -540,6 +540,7 @@ body .main {
   object-fit: cover;
   border-radius: 10px;
   align-self: center;
+  margin-bottom: 522px;
 }
 
 .left-carousel {
@@ -586,7 +587,29 @@ body .main {
   color: rgb(243, 243, 243);
 }
 
-@media screen and (min-width: 869px) {
+.about-us {
+  margin-top: 25px;
+  padding: 20px;
+  margin-bottom: 20px;
+  margin: 0 auto;
+}
+.about-us div {
+  background: rgb(199, 18, 18);
+  border-radius: 15px;
+  padding: 20px;
+}
+.about-us h1 {
+  font-size: 24px;
+}
+.about-us h1 strong {
+  border-bottom: solid 3px;
+}
+.about-us p {
+  color: rgb(231, 229, 229);
+  font-size: 18px;
+}
+
+@media screen and (min-width: 800px) {
   .carousel-slide-container {
     display: flex;
     align-items: center;
@@ -595,7 +618,7 @@ body .main {
   .carousel-slide-container-wrapper {
     display: flex;
     flex-direction: row;
-    width: 80%;
+    width: 85%;
     height: 90%;
     background: rgb(199, 18, 18);
     border-radius: 10px;
@@ -624,7 +647,7 @@ body .main {
     flex: 1;
     align-self: flex-start;
     max-width: 500px;
-    min-width: 400px;
+    min-width: 350px;
     padding: 0;
   }
   .button-advertise-main {
@@ -651,6 +674,25 @@ body .main {
   .button-advertise-main a:hover {
     color: rgb(243, 243, 243);
   }
+  .about-us {
+    margin-top: 25px;
+    background: rgb(199, 18, 18);
+    padding: 20px;
+    border-radius: 15px;
+    margin-bottom: 20px;
+    margin: 0 auto;
+    width: 80%;
+  }
+  .about-us h1 {
+    font-size: 24px;
+  }
+  .about-us h1 strong {
+    border-bottom: solid 3px;
+  }
+  .about-us p {
+    color: rgb(231, 229, 229);
+    font-size: 18px;
+  }
 }
 #big-title {
   font-size: 28px;
@@ -660,22 +702,6 @@ body .main {
 
 .text-center {
   text-align: center;
-}
-
-.about-us {
-  margin-top: 25px;
-  background: rgb(0, 0, 0);
-  padding: 15px;
-  border-radius: 15px;
-  margin-left: 15px;
-  margin-right: 15px;
-  margin-bottom: 20px;
-}
-.about-us h1 {
-  font-size: 24px;
-}
-.about-us h1 strong {
-  border-bottom: solid 3px;
 }
 
 /*# sourceMappingURL=main.css.map */
